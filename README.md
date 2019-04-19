@@ -1,5 +1,4 @@
 # 459-Class Django Application in Docker
-Assignment #4 
 
 ## Developmet Dependencies
 
