@@ -15,5 +15,3 @@ ADD requirements.txt /src/
 RUN easy_install certifi
 RUN pip install -r requirements.txt
 
-ENV HTTP_PROXY "http://root:pass4root@192.168.1.79:3128"
-ENV https_proxy "https://root:pass4root@192.168.1.79:3128"
