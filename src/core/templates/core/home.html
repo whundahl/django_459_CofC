@@ -1,0 +1,39 @@
+{% extends 'core/body.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div class="homepage-container" >
+
+  <div class="hero-image valign-wrapper" >
+    <div class="row home-hero">
+    </div>
+    <div class="row home-hero-title">
+    <h1 class="black-text center home-hero-text">Welcome to W | H Designs Web App</h1>
+     <h5 class="purple-text center">A CRUD Implimentation in Django 1.11</h5>
+    </div>
+  </div>
+<hr class="style-two">
+  <div class="container home-features">
+
+
+ <div class="row">
+    <h4 class="center">Employee Database</h4>
+      <div class="col s12">
+      {% block employees %}
+      {% endblock %}
+      <hr class="style-two">
+       <div class="col s12 center" style="padding: 50px;">
+     <a href="/employee/show" class="waves-effect waves-light btn purple" ><i class="material-icons right">cloud</i>Look Up Employees</a>
+    </div>
+    </div> 
+
+
+  </div>
+
+  
+ 
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+Django==1.11
+psycopg2-binary==2.7.5
+gunicorn==19.6.0
+celery==4.2.0
+redis==2.10.6
+django-tables2
+requests
+requests_oauthlib
+paramiko
+requests_oauthlib
+celery_progress
+django-jet

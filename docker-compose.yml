@@ -1,0 +1,40 @@
+version: '3.6'
+
+services:
+  nginx:
+    restart: always
+    image: nginx:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/portal.conf:/etc/nginx/conf.d/portal.conf
+      - ./src:/src
+    depends_on:
+      - web
+  web:
+    restart: always
+    build: ./web
+    entrypoint: /entrypoint.sh
+    depends_on:
+      - db
+    volumes:
+      - ./src:/src
+    expose:
+      - "8000"
+    links:
+      - redis
+  db:
+    restart: always
+    build: ./postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:

@@ -1,0 +1,39 @@
+{% extends 'accounts/main.html' %}
+
+{% block title%}Profile{% endblock %}
+
+{% block main-content %}
+{% load render_table from django_tables2 %}
+<div class="container">
+
+
+<div class="row">
+        
+                {% comment %} STYLE HERE NEEDS TO GO INTO CSS DOC {% endcomment %}
+             <div class="col m2 profile-icon-header">
+                <div class="hide-on-small-only profile-cloud-icon"><i class="large material-icons" >cloud_circle</i></div>         
+            
+            </div>
+                {% comment %} STYLE HERE NEEDS TO GO INTO CSS DOC {% endcomment %}
+            <div class="col m10 profile-name-header">
+                <h3 class="text-bold purple-text">Welcome, {{user.first_name}}!</h3>
+                <hr >
+                <h3>W | H Designs Portal</h3>  
+            </div>
+   
+   </div>
+</div>
+</div>
+
+
+<div class="container">
+
+  <div class="row">
+  <h3>Edit Profile</h3>
+        <a class="left black-text" href="/password/" style="padding: 15px"><i class="material-icons text-icon">https</i>Change Password
+        </a>
+ </div>
+ 
+
+
+{% endblock %}
