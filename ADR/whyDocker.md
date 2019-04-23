@@ -6,9 +6,9 @@
 
 ## Dockerfiles coupled with the docker-compose.yml file
 
-- With the combination of Dockerfiles and docker-compose a software can be quickly built simply by executing the docker-compose file. This compose file calls the Dockerfiles which then pull a docker image (an independent splice of a software). These Images are built into separate containers which are then linked to each other. The linking and environment variables are set with in the docker-compose file.
+- With the combination of Dockerfiles and docker-compose an application can be quickly built simply by executing the single docker-compose file. This compose file calls the Dockerfiles which then pull a docker image from the docker hub, containing the database program. These Images are built into separate containers which are then linked to each other. The linking and environment variables are set with in the docker-compose file.
 
-- The reason this is so handy is I can build a containerized applications that anyone can download and build by simply executing one file.
+- I find this to be especially handy because the application is incredibly modular which is a result of the Docker architecture, and made possible by the docker engine. Unfortunatly in order to run the application the host machine needs to be provisioned with docker ahead of time to take advantage of containerized environments. 
 
 ## Why this is good for this application
 
