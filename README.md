@@ -2,18 +2,20 @@
 
 ## Developmet Dependencies
 
-Docker
-Django v1.11
-psycopg2-binary v2.7.5
-gunicorn v19.6.0
-celery v4.2.0
-redis v2.10.6
-django-tables2
-requests 
-requests_oauthlib
+- Docker
+- Django v1.11
+- psycopg2-binary v2.7.5
+- gunicorn v19.6.0
+- celery v4.2.0
+- redis v2.10.6
+- django-tables2
+- requests 
+- requests_oauthlib
 
 
 ### Docker Compose Application 
+
+For any questions about the composition of this appliation please refer to the Django Documentation: https://docs.djangoproject.com/en/1.11/
 
 This application consists of 4 docker containers that serve a web application to front end users. Users can log in and create accounts, using secure authentication offered through django. 
 
