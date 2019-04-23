@@ -2,15 +2,15 @@
 
 ## Developmet Dependencies
 
-Django v1.11
 Docker
+Django v1.11
 psycopg2-binary v2.7.5
 gunicorn v19.6.0
 celery v4.2.0
 redis v2.10.6
-django-tables2 v.Latest
-requests v.Latest
-requests_oauthlib v.Latest
+django-tables2
+requests 
+requests_oauthlib
 
 
 ### Docker Compose Application 
@@ -36,10 +36,7 @@ NGINX: The nginx layer contains the server that controls all of the requests for
 ##### To Migrate the database after creating new models and views 
 Run these commands to enter the terminal inside the docker web container and migrate the databse for a givin app
 
-`docker exec -it <parent_dir_name>_web_1 /bin/bash` Then- `./manage.py migrate <your_app_name>`
-
-To Delete an application from your django project run this command:
-`./manage.py migrate <your_app_name> zero`
+`docker exec -it <parent_dir_name>_web_1 /bin/bash` Then- `./manage.py makemigrations` and finally `./manage.py migrate <your_app_name>`
 
 # Docker Django Project for CSCI-459
 
@@ -54,10 +51,27 @@ Defined in src/equirements.pip
 ### Basic Usage of Application 
 To start the project locally, run these two commands:
 
+##### Working with the applications in the project 
+To Delete an application from your django project run this command:
+`./manage.py migrate <your_app_name> zero`
+
+To Add an application to your django project run this command: 
+`./manage.py startapp <my_app>`
 
 ### Architechture Behind the Docker-django Web App
 I have worked with django several times before and the web framework provides a ModelViewController architectural pattern, making it a fairley easy framework to develop with. I find myself using python for more projects each day and this one is no different. Django when coupled with redis and postgreSQL, presents a microservice architectural pattern. 
 
 Finally, I realized that there is a need to have a fully deployable application without the hassle of having to set up the boilerplate code each time, with the architecture I define. Of course, every project is different and needs a defined architechture but when working with several django projects it can be hard to spin up new instances of differnt applications because of the need to create a virtual environment for development. Docker solves this for us, and provides us with a way to test and develop many applications at one time from a single machine. Additionally, It makes for easier deployment. 
 
+### Rubric
+
+1. Completeness (20%) Did you complete all the tasks listed above and provide all files necessary to make the application run? Does the application run?
+
+2. ADRs (40%) 
+You will be evaluated on:
+- Generating an appropriate set of ADRsfor your environment. Do you have ADRs for all the key components?
+- How well you explain your choices in the ADRs. Why did you select this database (or whatever)? Familiarity with the item is a valid partial justification but there should be more to it than just that.
+
+3. Use of containers (40%)
+We will be using containers a lot this semester. For this assignment you will be evaluated on how easily the Dockerfilescan be used to produce a running application
 
