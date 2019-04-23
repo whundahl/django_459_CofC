@@ -12,5 +12,5 @@
 
 ## Why this is good for this application
 
-- In regards to this application - building this in docker allowed for separation of systems. Meaning my DB, Webserver, and PHP are all within their own container. This isolation was extremely helpful for me during development:
-  - I was struggling a fair bit with the DB. I knew that the other containers were working fine and were not causing the issues I was encountering. So rather then rebuilding all three containers each time I would implement new code (an issue you would encounter using a VM), I would simply rebuild the DB container, speeding up this entire process. 
+- In regards to this application - building this in docker allowed for separation of systems. Meaning my DB, Webserver, and templating code are all within their own containers. This isolation was extremely helpful for me during development:
+  
