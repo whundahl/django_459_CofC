@@ -1,17 +1,18 @@
-# 459-Class Django Application in Docker
+# Docker Django Project at The College of Charleston CSCI-459
 
-## Developmet Dependencies
-
+## Requirements
+Most updated development dependencies are Defined in web/requirements.txt
 - Docker
-- Django v1.11
-- psycopg2-binary v2.7.5
-- gunicorn v19.6.0
-- celery v4.2.0
-- redis v2.10.6
+- Django 1.11
+- psycopg2-binary 2.7.5
+- gunicorn 19.6.0
+- celery 4.2.0
+- redis 2.10.6
 - django-tables2
 - requests 
 - requests_oauthlib
-
+- materialize.css UI/UX Framework 
+- Jquery
 
 ### Docker Compose Application 
 
@@ -23,7 +24,7 @@ Docker compose builds the application based on the docker files that are present
 
 REDIS: This container provides the caching for the message passing between the database and the web container. Redis is a powerful caching software when coupled with web applications and dramatically improves performance by providing the user with faster load times based on past requests made by the browser. 
 
-WEB: The web frameword container holds the source information for the django application and is the driving force behind the presentation layer of the web application. The web container interfaces with the databse layer to provide the user with a presentation of the correct data from within the database, delivered through sveral linked templates. This provides the user with the ability to interact with the database layer of the application. 
+WEB: The web framework container holds the source information for the django application and is the driving force behind the presentation layer of the web application. The web container interfaces with the databse layer to provide the user with a presentation of the correct data from within the database, delivered through sveral linked templates. This provides the user with the ability to interact with the database layer of the application. 
 
 POSTGRES: The Database Container contains a Postgres image that is spun up to interact with the server layer, and enevitably the web layer, where the calls to the model are made. This database is set up in conjuction with the django framework to provide easy production of models, in order to persist the data within the application. 
 
@@ -38,20 +39,7 @@ NGINX: The nginx layer contains the server that controls all of the requests for
 ##### To Migrate the database after creating new models and views 
 Run these commands to enter the terminal inside the docker web container and migrate the databse for a givin app
 
-`docker exec -it <parent_dir_name>_web_1 /bin/bash` Then- `./manage.py makemigrations` and finally `./manage.py migrate <your_app_name>`
-
-# Docker Django Project for CSCI-459
-
-### Requirements 
-Defined in src/equirements.pip
-- Django 1.10  
-- gunicorn 19.6.0  
-- psycopg2 2.7.5
-- celery 4.2.1
-- redis 2.10.6
-
-### Basic Usage of Application 
-To start the project locally, run these two commands:
+`docker exec -it <parent_dir_name>_web_1 /bin/bash` then `./manage.py makemigrations` and finally `./manage.py migrate <your_app_name>`
 
 ##### Working with the applications in the project 
 To Delete an application from your django project run this command:
