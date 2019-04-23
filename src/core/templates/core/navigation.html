@@ -60,7 +60,7 @@
       </div>
       {% if user.is_authenticated %}
         <!-- TODO: Need to add model for user profile image -->
-      <a href="#user"><img class="circle" src="{% static '/media/img/charleston/Pineapple.jpg' %}"></a>
+      <a href="#user"><img class="circle" src="{% static '/media/img/person.jpg' %}"></a>
       <a href="/accounts/profile/" class="white-text name" >Hello, {{ user.first_name }}</a>
       <a href="#email"><span class="white-text email">{{ user.email }}</span></a>
        {% else %}
