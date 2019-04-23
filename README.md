@@ -12,7 +12,6 @@ Most updated development dependencies are Defined in web/requirements.txt
 - requests 
 - requests_oauthlib
 - materialize.css UI/UX Framework 
-- Jquery
 
 ### Docker Compose Application 
 

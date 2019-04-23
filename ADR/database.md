@@ -1,13 +1,12 @@
-## Database: MariaDB
+## Database: PostreSQL
 # Date: 1/22/2019
 
 # Status: Accepted
-# Decision makers: Alexander Schlesinger
+# Decision makers: William Hundahl 
 
 #Contextual outline:
 
-Using a Dockerfile to pull an image of MariaDB.
-Then this file is called on by a docker-compose.yml file that then set some environment settings and also set the location of a datafile.
+Using a Dockerfile within database containere to pull an image of PostreSQL, create environment variables, load the configuration data into the application's database. This is called upon when starting the application up with the docker-compose file. 
 
 #Decision:
 
