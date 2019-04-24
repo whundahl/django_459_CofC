@@ -77,12 +77,12 @@ You will be evaluated on how well you explain and justify your CRUD, REST,ACID/B
 ##### Assignment 4
 
 1. Completeness (60%)
-- a.Did you complete all the tasks listed above?
-- b.Did you provide all the files necessary to make the application run using docker-compose?
-- c.Does the application run?
-- d.Is the data persisted across stops/starts of the containers?
-- e.Is the application packaged as a git repository?
+- Did you complete all the tasks listed above?
+- Did you provide all the files necessary to make the application run using docker-compose?
+- Does the application run?
+- Is the data persisted across stops/starts of the containers?
+- Is the application packaged as a git repository?
 
 2. ADRs(40%)
-- a.Did you include new ADRs for operational and configuration data?
-- b.Do the ADRs provide justification for your choices with respect to operational and configuration data?
+- Did you include new ADRs for operational and configuration data?
+- Do the ADRs provide justification for your choices with respect to operational and configuration data?
