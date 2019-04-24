@@ -10,8 +10,8 @@ Using nginx and Django to build a full web application was an easy decision and 
 
 #Decision:
 
-My choice of django was fairely simple. A web framework that is written upon one of the most popular languages today, Python, and as a result finding information regarding documented errors is much easier. I am learning the web framework slowely, but have spent time with React before and thought that it would be adventagous to learn the python based 'equivilant'.
+My choice of django was logically based upon the popularity of the framework. A web framework that is written upon one of the most popular languages today, Python, and as a result finding information regarding documented errors is much easier. I am learning the web framework slowely, but have spent time with React before and thought that it would be adventagous to learn the python based 'equivilant'.
 
-The Choice of nginx was fairly straightforward, as it seems to be the most popular choice amungst the Django community. It is easy to set up, light-weight and has outstanding performance, while being backed by a strong opensource community. 
+The Choice of nginx was fairly straightforward, as it seems to be the most popular choice amungst the Django community. It is easy to set up, light-weight and has outstanding performance, while being backed by a strong opensource community. Additonally, Django has opensorce backend support for nginx and which allows for easy configuration. 
 
 
