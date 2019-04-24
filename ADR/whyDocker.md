@@ -12,5 +12,7 @@
 
 #### Why this is good for this application
 
-- In regards to this application - building this in docker allowed for separation of systems. Meaning my DB, Webserver, and templating code are all within their own containers. This isolation was extremely helpful for me during development:
+- In regards to this application - building this in docker allowed for separation of systems. Meaning my DB, Webserver, and templating code are all within their own containers. This isolation was extremely helpful for me during development and allowed me to isolate erros from each layer of my architectural model. This application could be run in a python virtual environment, and it is often sdgessted to do so in order to isolate the requiremnts for each django project being run on a single machine. 
+
+- It is possible that this environement could be spun up in a Virtual Machine, but the scripting necessary to do so would be far more intensive than that of the required filed to run a successful Docker application. 
   
