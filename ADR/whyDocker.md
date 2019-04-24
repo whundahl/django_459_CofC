@@ -10,7 +10,7 @@
 
 - I find this to be especially handy because the application is incredibly modular which is a result of the Docker architecture, and made possible by the docker engine. Unfortunatly in order to run the application the host machine needs to be provisioned with docker ahead of time to take advantage of containerized environments. 
 
-#### Why this is good for this application
+#### Why Docker is good for this application
 
 - In regards to this application - building this in docker allowed for separation of systems. Meaning my DB, Webserver, and templating code are all within their own containers. This isolation was extremely helpful for me during development and allowed me to isolate erros from each layer of my architectural model. This application could be run in a python virtual environment, and it is often sdgessted to do so in order to isolate the requiremnts for each django project being run on a single machine. 
 

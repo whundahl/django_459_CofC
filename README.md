@@ -29,6 +29,8 @@ POSTGRES: The Database Container contains a Postgres image that is spun up to in
 
 NGINX: The nginx layer contains the server that controls all of the requests for the application and all HTTP calls are handled in this container. When requests are made from the web containter they are then passed to the nginx container which serves the assets to the web container and in turn the browser. 
 
+## Building the Applicaiton 
+
 ##### New Build from docker-compose.yml 
 `docker-compose up --build`
 
