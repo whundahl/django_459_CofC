@@ -48,11 +48,13 @@ To Add an application to your django project run this command:
 `./manage.py startapp <my_app>`
 
 ### Architechture Behind the Docker-django Web App
-I have worked with django several times before and the web framework provides a ModelViewController architectural pattern, making it a fairley easy framework to develop with. I find myself using python for more projects each day and this one is no different. Django when coupled with redis and postgreSQL, presents a microservice architectural pattern. 
+I have worked with django several times before and the web framework provides a ModelViewController architectural pattern, making it a fairly easy framework to develop with. I find myself using python for more projects each day and this one is no different. Django when coupled with redis and postgreSQL, presents a microservice architectural pattern. 
 
 Finally, I realized that there is a need to have a fully deployable application without the hassle of having to set up the boilerplate code each time, with the architecture I define. Of course, every project is different and needs a defined architechture but when working with several django projects it can be hard to spin up new instances of differnt applications because of the need to create a virtual environment for development. Docker solves this for us, and provides us with a way to test and develop many applications at one time from a single machine. Additionally, It makes for easier deployment. 
 
 ### Rubric
+
+##### Assignment 1
 
 1. Completeness (20%) Did you complete all the tasks listed above and provide all files necessary to make the application run? Does the application run?
 
@@ -64,3 +66,10 @@ You will be evaluated on:
 3. Use of containers (40%)
 We will be using containers a lot this semester. For this assignment you will be evaluated on how easily the Dockerfilescan be used to produce a running application
 
+##### Assignment 2
+
+1. Completeness (40%)
+Did you complete all the tasks listed above and provide all files necessary to make the application run? Does the application run?
+
+2. ADRs(60%)
+You will be evaluated on how well you explain and justify your CRUD, REST,ACID/BASE and container usage.

@@ -4,11 +4,11 @@
 # Status: Accepted
 # Decision makers: William Hundahl
 
-#Contextual outline:
+#### Contextual outline:
 
 Using nginx and Django to build a full web application was an easy decision and allowed for quick development startup with reliable usage and stable, publically supported code for server settings. The nginx container is built from an nginx image pulled from the Docker Hub within the docker-compose file under the project root. 
 
-#Decision:
+#### Decision:
 
 My choice of django was logically based upon the popularity of the framework. A web framework that is written upon one of the most popular languages today, Python, and as a result finding information regarding documented errors is much easier. I am learning the web framework slowely, but have spent time with React before and thought that it would be adventagous to learn the python based 'equivilant'.
 
