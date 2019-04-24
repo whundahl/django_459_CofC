@@ -15,6 +15,8 @@ Most updated development dependencies are Defined in web/requirements.txt
 
 ### Docker Compose Application 
 
+- To Log into the web APP please use `admin:pass4admin`
+
 For any questions about the composition of this appliation please refer to the Django Documentation: https://docs.djangoproject.com/en/1.11/
 
 This application consists of 4 docker containers that serve a web application to front end users. Users can log in and create accounts, using secure authentication offered through django. 
@@ -28,6 +30,8 @@ WEB: The web framework container holds the source information for the django app
 POSTGRES: The Database Container contains a Postgres image that is spun up to interact with the server layer, and enevitably the web layer, where the calls to the model are made. This database is set up in conjuction with the django framework to provide easy production of models, in order to persist the data within the application. 
 
 NGINX: The nginx layer contains the server that controls all of the requests for the application and all HTTP calls are handled in this container. When requests are made from the web containter they are then passed to the nginx container which serves the assets to the web container and in turn the browser. 
+
+- Please refer to the ADR Directory for more information on the application 
 
 ## Building the Applicaiton 
 
