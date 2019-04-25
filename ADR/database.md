@@ -11,7 +11,7 @@ Using a Dockerfile within database container to pull an image of PostgreSQL, cre
 #### Decision:
 
 - Mysql VS PostgreSQL
-Based on the higher level approach driving the devlopment of this application, I opted for the most opensource database image, that was also popular among the online development community. MySQL is a great basic database and can be just as easily linked to django through the django engine value listed within the settings.py file, but I happened to find a configuration in a github Gist that helped me set up the PostgreSQL Database. The Postgres database is great for image storage and filestorage as well which would make it a nice option for the application at scale. MySQL also has roots in Oracle and is not technically licensed for production us, although there are images of it. Often MariaDB is substituted, but I opted to go with PostgreSQL. 
+Based on the higher level approach driving the development of this application, I opted for the most opensource database image, that was also popular among the online development community. MySQL is a great basic database and can be just as easily linked to django through the django engine value listed within the settings.py file, but I happened to find a configuration in a github Gist that helped me set up the PostgreSQL Database. The Postgres database is great for image storage and filestorage as well which would make it a nice option for the application at scale. MySQL also has roots in Oracle and is not technically licensed for production us, although there are images of it. Often MariaDB is substituted, but I opted to go with PostgreSQL. 
 
 - PostreSQL VS SQLite 
 Although the basic Django setup offers a range of possibilities for development the programmers and creators behind Django suggest the use of SQLite, but at a production level this type of database is not often sufficient and cannot be migrated as easily into other databases. Again, PostgreSQL wins here and MySQL as one of the most common open source databases for storing Python web applications' data. SQLite is a database that is stored in a single file on disk. SQLite is built into Python but is only built for access by a single connection at a time.
@@ -27,7 +27,7 @@ The Django application supports CRUD at its very core and its separation of the 
 #### Consequence:
 
 - Data
-Since it's a simple set of sql statements the database will read and write to this file which is labeled as PostgreSQL database dump. Configuration and operational data are both handled within the same database layer of the application and are all loaded as seperate tables into the PostgreSQL database. 
+Since it's a simple set of sql statements the database will read and write to this file which is labeled as PostgreSQL database dump. Configuration and operational data are both handled within the same database layer of the application and are all loaded as separate tables into the PostgreSQL database. 
 
 - CRUD 
 The application needs to support the CRUD functionality otherwise the application would be useless at its core. Ever aspect of the application in its current state needs to access the database and as such needs to be able to touch the database and perform basic unction on the data (i.e CRUD).
