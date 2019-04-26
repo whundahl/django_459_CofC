@@ -795,6 +795,7 @@ COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
 --
 
 COPY public.auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
+3	pbkdf2_sha256$36000$f0Xjpi26z9G7$SpTv8GobnPM0Lu9i41Aq7VaUTkiWp1wyksHlwTJmkGI=	2018-08-16 02:55:26.526883+00	t	willtest	william	hundahl	hundahlwt@g.cofc.edu	t	t	2018-08-16 02:54:01.967053+00
 1	pbkdf2_sha256$36000$f0Xjpi26z9G7$SpTv8GobnPM0Lu9i41Aq7VaUTkiWp1wyksHlwTJmkGI=	2018-08-16 16:11:04.661448+00	t	admin			admin@example.com	t	t	2018-08-16 02:12:19.84724+00
 2	pbkdf2_sha256$36000$2nBq4Q2FoIvj$PpY+gv5L5GPox7EoWRQ9uqlRySQPfRTHQMt7vX2w990=	2018-08-16 18:43:45.512453+00	f	test				f	t	2018-08-16 02:13:31+00
 \.
