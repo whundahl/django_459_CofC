@@ -795,9 +795,6 @@ COPY public.auth_permission (id, name, content_type_id, codename) FROM stdin;
 --
 
 COPY public.auth_user (id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined) FROM stdin;
-3	pbkdf2_sha256$36000$X1ZlrqU2SuAd$XLSmZb6tWsPKJayB1f6Mmvj724lx/7lVy4DzuVw6jDc=	2018-08-16 02:55:26.526883+00	f	jontest	Jon	Coleman	jon.coleman@micfo.com	f	t	2018-08-16 02:54:01.967053+00
-4	pbkdf2_sha256$36000$YeLkZPTBZUb0$xpB8ppChx0ATU10MOWtHkYa+yvScszRzhkXGCGQdLM0=	2018-08-16 02:56:00.562765+00	f	test1	test	test	test@test.test	f	t	2018-08-16 02:56:00.301511+00
-5	pbkdf2_sha256$36000$8gmZ8p0FFT7t$7li3a8lOgyCiiZ4SJIYO9mOAop+OmdNHDYI7sbY2QKg=	2018-08-16 13:32:27.671859+00	f	david	David	Park	david.park@micfo.com	f	t	2018-08-16 13:32:27.610292+00
 1	pbkdf2_sha256$36000$f0Xjpi26z9G7$SpTv8GobnPM0Lu9i41Aq7VaUTkiWp1wyksHlwTJmkGI=	2018-08-16 16:11:04.661448+00	t	admin			admin@example.com	t	t	2018-08-16 02:12:19.84724+00
 2	pbkdf2_sha256$36000$2nBq4Q2FoIvj$PpY+gv5L5GPox7EoWRQ9uqlRySQPfRTHQMt7vX2w990=	2018-08-16 18:43:45.512453+00	f	test				f	t	2018-08-16 02:13:31+00
 \.
